@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find peace and healing with Healing Hands. Expert guided meditation instruction and professional therapeutic massage therapy. Book your transformational session today.">
+    <title>Healing Hands | Guided Meditation & Therapeutic Massage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="#A8BFA5" stroke-width="2" opacity="0.3"/>
+                    <path d="M20 8C18 12 16 16 20 20C24 16 22 12 20 8Z" fill="#A8BFA5"/>
+                    <path d="M12 20C14 18 16 20 18 22C16 24 12 26 12 20Z" fill="#A8BFA5" opacity="0.7"/>
+                    <path d="M28 20C26 18 24 20 22 22C24 24 28 26 28 20Z" fill="#A8BFA5" opacity="0.7"/>
+                    <circle cx="20" cy="26" r="2" fill="#D4AF75"/>
+                </svg>
+                <span class="logo-text">Healing Hands</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#booking" class="btn btn-primary nav-btn">Book Session</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="breathing-circle"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">Find Your Peace. Heal Your Body. Transform Your Life.</h1>
+                <p class="hero-subtitle fade-in delay-1">Guided meditation and therapeutic massage designed to help you release stress, restore balance, and reconnect with your truest self.</p>
+                <a href="#booking" class="btn btn-hero fade-in delay-2">Begin Your Journey</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-preview" id="services">
+        <div class="container">
+            <h2 class="section-title">How We Can Help You Heal</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-image meditation-bg">
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" stroke="white" stroke-width="2" opacity="0.5"/>
+                                    <path d="M30 15C28 20 25 25 30 30C35 25 32 20 30 15Z" fill="white"/>
+                                    <circle cx="30" cy="38" r="3" fill="#D4AF75"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Discover Inner Peace</h3>
+                            <p class="service-description">Guided meditation sessions designed for beginners seeking calm, clarity, and emotional balance. Learn to quiet your mind, reduce stress, and cultivate lasting peace.</p>
+                            <a href="#meditation" class="btn btn-secondary">Explore Meditation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-image massage-bg">
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <path d="M25 20C25 20 20 25 20 30C20 35 23 38 25 40" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M35 20C35 20 40 25 40 30C40 35 37 38 35 40" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="30" cy="25" r="3" fill="#D4AF75"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Experience Deep Healing</h3>
+                            <p class="service-description">Professional therapeutic massage therapy to release physical tension, restore balance, and renew your body. Customized treatments for your unique needs.</p>
+                            <a href="#massage" class="btn btn-secondary">Explore Massage Therapy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-image" data-aos="fade-right">
+                <div class="about-image-placeholder">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="48" stroke="#A8BFA5" stroke-width="3"/>
+                        <circle cx="50" cy="40" r="15" fill="#A8BFA5" opacity="0.3"/>
+                        <path d="M25 75C25 65 35 55 50 55C65 55 75 65 75 75" stroke="#A8BFA5" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <p class="placeholder-text">Your Photo Here</p>
+                </div>
+            </div>
+            <div class="about-content" data-aos="fade-left">
+                <h2 class="section-title">Meet Your Healer</h2>
+                <p class="section-subtitle">Your Guide to Wellness</p>
+                <p class="about-text">With years of experience in meditation instruction and therapeutic massage, I've dedicated my life to helping people like you find peace, release pain, and rediscover balance.</p>
+                <p class="about-text">Whether you're stepping onto a meditation cushion for the first time or seeking relief from chronic tension, I'm here to guide you every step of the way. Your journey to healing starts here, and I'm honored to walk it with you.</p>
+                <div class="credentials">
+                    <div class="credential-item">
+                        <span class="credential-icon">✓</span>
+                        <span>Certified Meditation Instructor</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-icon">✓</span>
+                        <span>Licensed Massage Therapist</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-icon">✓</span>
+                        <span>500+ Hours Continuing Education</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">Learn More About My Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services Section -->
+    <section class="detailed-services">
+        <div class="container">
+            <!-- Meditation Services -->
+            <div class="service-detail" id="meditation">
+                <div class="service-detail-header" data-aos="fade-up">
+                    <h2 class="section-title">Guided Meditation Services</h2>
+                    <p class="section-description">Meditation isn't about stopping your thoughts—it's about changing your relationship with them. Whether you're brand new to meditation or looking to deepen your practice, I'll guide you step-by-step toward calm, clarity, and emotional balance.</p>
+                </div>
+                <div class="service-offerings">
+                    <div class="offering-card" data-aos="fade-up">
+                        <h3>Beginner Group Classes</h3>
+                        <p class="offering-tagline">Learn Meditation in a Supportive Group</p>
+                        <p class="offering-description">Join a small, welcoming group of fellow beginners in a safe, judgment-free space.</p>
+                        <ul class="offering-features">
+                            <li>Small groups (max 8 people)</li>
+                            <li>60-minute sessions</li>
+                            <li>Weekly classes available</li>
+                            <li>All levels welcome</li>
+                        </ul>
+                        <div class="offering-price">
+                            <span class="price">$35</span>
+                            <span class="price-detail">per class</span>
+                        </div>
+                    </div>
+                    <div class="offering-card featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="featured-badge">Most Popular</div>
+                        <h3>Private 1-on-1 Sessions</h3>
+                        <p class="offering-tagline">Personalized Meditation Instruction</p>
+                        <p class="offering-description">Get one-on-one guidance tailored specifically to your needs, goals, and challenges.</p>
+                        <ul class="offering-features">
+                            <li>Fully personalized instruction</li>
+                            <li>60 or 90-minute sessions</li>
+                            <li>Flexible scheduling</li>
+                            <li>Custom meditation recordings</li>
+                        </ul>
+                        <div class="offering-price">
+                            <span class="price">$85</span>
+                            <span class="price-detail">60 min | $120 for 90 min</span>
+                        </div>
+                    </div>
+                    <div class="offering-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Custom Meditation Programs</h3>
+                        <p class="offering-tagline">Transform Your Life</p>
+                        <p class="offering-description">Structured programs guiding you through a transformational journey over 4, 6, or 8 weeks.</p>
+                        <ul class="offering-features">
+                            <li>Weekly private sessions</li>
+                            <li>Daily guided practices</li>
+                            <li>Progress tracking</li>
+                            <li>Lifetime access to recordings</li>
+                        </ul>
+                        <div class="offering-price">
+                            <span class="price">$299</span>
+                            <span class="price-detail">4-week program</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Massage Services -->
+            <div class="service-detail" id="massage">
+                <div class="service-detail-header" data-aos="fade-up">
+                    <h2 class="section-title">Therapeutic Massage Services</h2>
+                    <p class="section-description">Your body holds the story of your life—every stress, every tension, every moment you've pushed through. Therapeutic massage isn't just about feeling good for an hour; it's about releasing what your body has been holding and restoring balance from the inside out.</p>
+                </div>
+                <div class="service-offerings">
+                    <div class="offering-card" data-aos="fade-up">
+                        <h3>Swedish Massage</h3>
+                        <p class="offering-tagline">Classic Relaxation</p>
+                        <p class="offering-description">Gentle, flowing strokes designed to promote deep relaxation and improve circulation.</p>
+                        <ul class="offering-features">
+                            <li>Perfect for beginners</li>
+                            <li>Stress relief</li>
+                            <li>Improved circulation</li>
+                            <li>Better sleep quality</li>
+                        </ul>
+                        <div class="offering-price">
+                            <span class="price">$95</span>
+                            <span class="price-detail">60 min | $135 for 90 min</span>
+                        </div>
+                    </div>
+                    <div class="offering-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Deep Tissue Massage</h3>
+                        <p class="offering-tagline">Targeted Tension Relief</p>
+                        <p class="offering-description">Focused pressure applied to deeper muscle layers to release chronic knots and stubborn tension.</p>
+                        <ul class="offering-features">
+                            <li>Chronic muscle tension</li>
+                            <li>Sports recovery</li>
+                            <li>Injury rehabilitation</li>
+                            <li>Postural correction</li>
+                        </ul>
+                        <div class="offering-price">
+                            <span class="price">$110</span>
+                            <span class="price-detail">60 min | $155 for 90 min</span>
+                        </div>
+                    </div>
+                    <div class="offering-card featured" data-aos="fade-up" data-aos-delay="200">
+                        <div class="featured-badge">Luxury Experience</div>
+                        <h3>Hot Stone Therapy</h3>
+                        <p class="offering-tagline">Ultimate Relaxation</p>
+                        <p class="offering-description">Smooth, heated stones combined with massage techniques to warm tight muscles and induce profound relaxation.</p>
+                        <ul class="offering-features">
+                            <li>Deep relaxation</li>
+                            <li>Melts muscle tension</li>
+                            <li>Improved circulation</li>
+                            <li>Luxurious escape</li>
+                        </ul>
+                        <div class="offering-price">
+                            <span class="price">$165</span>
+                            <span class="price-detail">90 minutes</span>
+                        </div>
+                    </div>
+                    <div class="offering-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Aromatherapy Massage</h3>
+                        <p class="offering-tagline">Sensory Healing</p>
+                        <p class="offering-description">Therapeutic massage enhanced with carefully selected essential oils for body and mind healing.</p>
+                        <ul class="offering-features">
+                            <li>Stress & anxiety relief</li>
+                            <li>Emotional balance</li>
+                            <li>Enhanced relaxation</li>
+                            <li>Multi-sensory experience</li>
+                        </ul>
+                        <div class="offering-price">
+                            <span class="price">$105</span>
+                            <span class="price-detail">60 min | $145 for 90 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Stories of Healing & Transformation</h2>
+            <p class="section-subtitle">Real experiences from real people</p>
+            <div class="testimonials-carousel">
+                <div class="testimonial-track">
+                    <div class="testimonial-card active">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Gurpreet's meditation sessions changed my life. I came in stressed and overwhelmed, and left with tools I use every single day. I'm calmer, more focused, and finally sleeping through the night."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div>
+                                <p class="author-name">Sarah M.</p>
+                                <p class="author-title">First-time Meditator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"I've had massages all over the city, but Gurpreet's approach is different. He truly listens and tailors every session. My chronic back pain is finally manageable."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MT</div>
+                            <div>
+                                <p class="author-name">Michael T.</p>
+                                <p class="author-title">Chronic Pain Relief</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"As someone who was skeptical about meditation, I was blown away. Gurpreet made it accessible, practical, and deeply meaningful. I'm a believer now."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JL</div>
+                            <div>
+                                <p class="author-name">Jennifer L.</p>
+                                <p class="author-title">Wellness Seeker</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"The hot stone massage was pure bliss. Every muscle in my body relaxed. It's not just a massage—it's a transformative experience. Worth every penny."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">DW</div>
+                            <div>
+                                <p class="author-name">David W.</p>
+                                <p class="author-title">Relaxation Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA Section -->
+    <section class="booking-cta" id="booking">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Ready to Transform Your Wellness?</h2>
+                <p class="cta-text">Take the first step toward peace, healing, and balance. Book your session today and experience the difference that expert care and genuine compassion can make.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-hero">Schedule Your First Session</a>
+                    <a href="#services" class="btn btn-outline">Explore All Services</a>
+                </div>
+                <p class="cta-note">✨ First-time clients receive 15% off their first session</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">We're here to answer your questions and help you begin your healing journey</p>
+            <div class="contact-container">
+                <div class="contact-form-wrapper" data-aos="fade-right">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mlgpepoq" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">How can we help? *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="booking">Booking Question</option>
+                                <option value="meditation">About Meditation</option>
+                                <option value="massage">About Massage Therapy</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <!-- Hidden field to specify your email -->
+                        <input type="hidden" name="_replyto" value="gskohaar@gmail.com">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Healing Hands">
+                        <input type="hidden" name="_next" value="http://localhost:8000/#contact">
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">✓</div>
+                        <h3>Thank You!</h3>
+                        <p>We've received your message and will respond within 24 hours.</p>
+                    </div>
+                </div>
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>123 Wellness Way<br>Your City, ST 12345</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 7:00 PM<br>
+                           Saturday: 10:00 AM - 5:00 PM<br>
+                           Sunday: Closed</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Contact</h3>
+                        <p>Phone: (555) 123-4567<br>
+                           Email: hello@healinghands.com</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">💬</div>
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Facebook">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>About Healing Hands</h4>
+                    <p>Dedicated to guiding you toward peace, healing, and complete wellness through guided meditation and therapeutic massage therapy.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#meditation">Guided Meditation</a></li>
+                        <li><a href="#massage">Massage Therapy</a></li>
+                        <li><a href="#booking">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Join our wellness community for tips and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Healing Hands. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
