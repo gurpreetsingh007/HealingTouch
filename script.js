@@ -331,32 +331,6 @@ window.addEventListener('load', function() {
     }
 });
 
-// ===== Accessibility: Skip to main content =====
-const skipLink = document.createElement('a');
-skipLink.href = '#services';
-skipLink.textContent = 'Skip to main content';
-skipLink.className = 'skip-link';
-skipLink.style.cssText = `
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: var(--color-golden);
-    color: white;
-    padding: 8px;
-    text-decoration: none;
-    z-index: 10000;
-`;
-
-skipLink.addEventListener('focus', function() {
-    this.style.top = '0';
-});
-
-skipLink.addEventListener('blur', function() {
-    this.style.top = '-40px';
-});
-
-document.body.insertBefore(skipLink, document.body.firstChild);
-
 // ===== Performance: Debounce scroll events =====
 function debounce(func, wait) {
     let timeout;
